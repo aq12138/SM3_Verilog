@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/Data_Extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SM3_Encrypt
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/iterator_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module iterator_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sim_1/new/SIM_sm3_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIM_sm3_TB
+WARNING: [VRFC 10-2096] empty statement in sequential block [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sim_1/new/SIM_sm3_TB.v:119]

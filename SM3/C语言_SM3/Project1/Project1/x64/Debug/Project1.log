@@ -1,0 +1,9 @@
+﻿  sm3.c
+  main.c
+  正在生成代码...
+E:\Desktop\Git_SM3_Vrilog\SM3\C语言_SM3\SM3\sm3.c(14,2): warning C4091: “static ”: 没有声明变量时忽略“<unnamed-enum-A>”的左侧
+E:\Desktop\Git_SM3_Vrilog\SM3\C语言_SM3\SM3\sm3.c(86,3): warning C4013: “printf”未定义；假设外部返回 int
+E:\Desktop\Git_SM3_Vrilog\SM3\C语言_SM3\SM3\sm3.c(167,2): warning C4013: “memset”未定义；假设外部返回 int
+E:\Desktop\Git_SM3_Vrilog\SM3\C语言_SM3\SM3\sm3.c(168,2): warning C4013: “memcpy”未定义；假设外部返回 int
+E:\Desktop\Git_SM3_Vrilog\SM3\C语言_SM3\SM3\sm3.c(186,16): warning C4018: “<”: 有符号/无符号不匹配
+  Project1.vcxproj -> E:\Desktop\Git_SM3_Vrilog\SM3\C语言_SM3\Project1\x64\Debug\Project1.exe

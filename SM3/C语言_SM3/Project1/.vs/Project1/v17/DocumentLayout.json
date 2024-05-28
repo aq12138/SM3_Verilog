@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Desktop\\Git_SM3_Vrilog\\SM3\\C\u8BED\u8A00_SM3\\Project1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{372B4946-05AD-4CB9-963C-B35E708DFA64}|Project1\\Project1.vcxproj|E:\\Desktop\\Git_SM3_Vrilog\\SM3\\C\u8BED\u8A00_SM3\\Project1\\Project1\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{372B4946-05AD-4CB9-963C-B35E708DFA64}|Project1\\Project1.vcxproj|solutionrelative:Project1\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{372B4946-05AD-4CB9-963C-B35E708DFA64}|Project1\\Project1.vcxproj|E:\\Desktop\\Git_SM3_Vrilog\\SM3\\C\u8BED\u8A00_SM3\\SM3\\sm3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.c",
+              "DocumentMoniker": "E:\\Desktop\\Git_SM3_Vrilog\\SM3\\C\u8BED\u8A00_SM3\\Project1\\Project1\\main.c",
+              "RelativeDocumentMoniker": "Project1\\main.c",
+              "ToolTip": "E:\\Desktop\\Git_SM3_Vrilog\\SM3\\C\u8BED\u8A00_SM3\\Project1\\Project1\\main.c",
+              "RelativeToolTip": "Project1\\main.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-05-27T08:45:56.331Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sm3.h",
+              "DocumentMoniker": "E:\\Desktop\\Git_SM3_Vrilog\\SM3\\C\u8BED\u8A00_SM3\\SM3\\sm3.h",
+              "RelativeDocumentMoniker": "..\\SM3\\sm3.h",
+              "ToolTip": "E:\\Desktop\\Git_SM3_Vrilog\\SM3\\C\u8BED\u8A00_SM3\\SM3\\sm3.h",
+              "RelativeToolTip": "..\\SM3\\sm3.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-28T05:51:41.578Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

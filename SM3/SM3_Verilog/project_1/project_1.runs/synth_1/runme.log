@@ -1,0 +1,786 @@
+
+*** Running vivado
+    with args -log XC7Z035_TOP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source XC7Z035_TOP.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source XC7Z035_TOP.tcl -notrace
+Command: synth_design -top XC7Z035_TOP -part xc7z035ffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z035'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8924 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.874 . Memory (MB): peak = 474.250 ; gain = 100.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'XC7Z035_TOP' [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/XC7Z035_TOP.v:39]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/XC7Z035_TOP.v:55]
+INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/XC7Z035_TOP.v:56]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.runs/synth_1/.Xil/Vivado-41316-DESKTOP-IPJVCM1/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.runs/synth_1/.Xil/Vivado-41316-DESKTOP-IPJVCM1/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rst_gen_module' [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/rst_gen_module.v:22]
+	Parameter P_RST_CYCLE bound to: 100 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rst_gen_module' (2#1) [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/rst_gen_module.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SM3_Encrypt' [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:38]
+	Parameter PARALLEL_NUM bound to: 4 - type: integer 
+	Parameter P_ITERATOR_CYCLE bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'iterator_module' [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/iterator_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'iterator_module' (3#1) [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/iterator_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Data_Extend' [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/Data_Extend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Extend' (4#1) [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/Data_Extend.v:23]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[0].iterator_parallel[0].r_iterator_V_reg[1] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[0].iterator_parallel[1].r_iterator_V_reg[2] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[0].iterator_parallel[2].r_iterator_V_reg[3] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[1].iterator_parallel[0].r_iterator_V_reg[5] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:119]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[1].iterator_parallel[1].r_iterator_V_reg[6] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[1].iterator_parallel[2].r_iterator_V_reg[7] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[2].iterator_parallel[0].r_iterator_V_reg[9] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:119]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[2].iterator_parallel[1].r_iterator_V_reg[10] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[2].iterator_parallel[2].r_iterator_V_reg[11] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[3].iterator_parallel[0].r_iterator_V_reg[13] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:119]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[3].iterator_parallel[1].r_iterator_V_reg[14] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[3].iterator_parallel[2].r_iterator_V_reg[15] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[4].iterator_parallel[0].r_iterator_V_reg[17] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:119]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[4].iterator_parallel[1].r_iterator_V_reg[18] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[4].iterator_parallel[2].r_iterator_V_reg[19] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[5].iterator_parallel[0].r_iterator_V_reg[21] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:119]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[5].iterator_parallel[1].r_iterator_V_reg[22] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[5].iterator_parallel[2].r_iterator_V_reg[23] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[6].iterator_parallel[0].r_iterator_V_reg[25] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:119]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[6].iterator_parallel[1].r_iterator_V_reg[26] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[6].iterator_parallel[2].r_iterator_V_reg[27] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[7].iterator_parallel[0].r_iterator_V_reg[29] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:119]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[7].iterator_parallel[1].r_iterator_V_reg[30] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[7].iterator_parallel[2].r_iterator_V_reg[31] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[8].iterator_parallel[0].r_iterator_V_reg[33] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:119]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[8].iterator_parallel[1].r_iterator_V_reg[34] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[8].iterator_parallel[2].r_iterator_V_reg[35] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[9].iterator_parallel[0].r_iterator_V_reg[37] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:119]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[9].iterator_parallel[1].r_iterator_V_reg[38] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[9].iterator_parallel[2].r_iterator_V_reg[39] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[10].iterator_parallel[0].r_iterator_V_reg[41] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:119]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[10].iterator_parallel[1].r_iterator_V_reg[42] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[10].iterator_parallel[2].r_iterator_V_reg[43] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[11].iterator_parallel[0].r_iterator_V_reg[45] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:119]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[11].iterator_parallel[1].r_iterator_V_reg[46] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[11].iterator_parallel[2].r_iterator_V_reg[47] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[12].iterator_parallel[0].r_iterator_V_reg[49] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:119]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[12].iterator_parallel[1].r_iterator_V_reg[50] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[12].iterator_parallel[2].r_iterator_V_reg[51] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[13].iterator_parallel[0].r_iterator_V_reg[53] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:119]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[13].iterator_parallel[1].r_iterator_V_reg[54] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[13].iterator_parallel[2].r_iterator_V_reg[55] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[14].iterator_parallel[0].r_iterator_V_reg[57] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:119]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[14].iterator_parallel[1].r_iterator_V_reg[58] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[14].iterator_parallel[2].r_iterator_V_reg[59] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[15].iterator_parallel[0].r_iterator_V_reg[61] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:119]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[15].iterator_parallel[1].r_iterator_V_reg[62] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[15].iterator_parallel[2].r_iterator_V_reg[63] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element iterator_cycle[15].iterator_parallel[3].r_iterator_V_reg[64] was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:146]
+WARNING: [Synth 8-6014] Unused sequential element r_extend_valid_reg was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:95]
+WARNING: [Synth 8-6014] Unused sequential element r_out_cnt_reg was removed.  [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:191]
+INFO: [Synth 8-6155] done synthesizing module 'SM3_Encrypt' (5#1) [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:38]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'SM3_Encrypt_u0'. This will prevent further optimization [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/XC7Z035_TOP.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'XC7Z035_TOP' (6#1) [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/XC7Z035_TOP.v:39]
+WARNING: [Synth 8-3917] design XC7Z035_TOP has port o_led[3] driven by constant 0
+WARNING: [Synth 8-3917] design XC7Z035_TOP has port o_led[2] driven by constant 0
+WARNING: [Synth 8-3917] design XC7Z035_TOP has port o_led[1] driven by constant 0
+WARNING: [Synth 8-3917] design XC7Z035_TOP has port o_led[0] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 565.988 ; gain = 192.676
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 565.988 ; gain = 192.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 565.988 ; gain = 192.676
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z035ffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0_U0'
+Finished Parsing XDC File [e:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0_U0'
+Parsing XDC File [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/constrs_1/new/bOARD.xdc]
+WARNING: [Vivado 12-584] No ports matched 'i_clk'. [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/constrs_1/new/bOARD.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'i_clk'. [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/constrs_1/new/bOARD.xdc:2]
+Finished Parsing XDC File [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/constrs_1/new/bOARD.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/constrs_1/new/bOARD.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/XC7Z035_TOP_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/constrs_1/new/bOARD.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/XC7Z035_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/XC7Z035_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1254.348 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1254.730 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1254.730 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1254.730 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1254.730 ; gain = 881.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z035ffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1254.730 ; gain = 881.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for i_clk_n. (constraint file  e:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk_n. (constraint file  e:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for i_clk_p. (constraint file  e:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk_p. (constraint file  e:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for clk_wiz_0_U0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1254.730 ; gain = 881.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "r_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ro_rst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "r_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1254.730 ; gain = 881.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |iterator_module  |          64|      6772|
+|2     |SM3_Encrypt__GC0 |           1|     30424|
+|3     |XC7Z035_TOP__GC0 |           1|      1228|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register r_extend_data_reg [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:96]
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 64    
+	   4 Input     32 Bit       Adders := 128   
+	   2 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input    256 Bit         XORs := 1     
+	   3 Input     32 Bit         XORs := 244   
+	   2 Input     32 Bit         XORs := 128   
+	   5 Input     32 Bit         XORs := 52    
++---Registers : 
+	             4224 Bit    Registers := 1     
+	              512 Bit    Registers := 2     
+	              256 Bit    Registers := 18    
+	               32 Bit    Registers := 132   
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   3 Input    256 Bit        Muxes := 1     
+	   2 Input    256 Bit        Muxes := 1     
+	  64 Input     32 Bit        Muxes := 64    
+	   2 Input     32 Bit        Muxes := 195   
+	   2 Input     31 Bit        Muxes := 64    
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register r_extend_data_reg [E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.srcs/sources_1/new/SM3_Encrypt.v:96]
+Hierarchical RTL Component report 
+Module XC7Z035_TOP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	              256 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input    256 Bit        Muxes := 1     
+	   2 Input    256 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module iterator_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 2     
++---XORs : 
+	   3 Input     32 Bit         XORs := 3     
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  64 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     31 Bit        Muxes := 1     
+Module Data_Extend 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 52    
+	   5 Input     32 Bit         XORs := 52    
+	   2 Input     32 Bit         XORs := 64    
++---Registers : 
+	              512 Bit    Registers := 1     
+	               32 Bit    Registers := 132   
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 67    
+Module SM3_Encrypt 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    256 Bit         XORs := 1     
++---Registers : 
+	             4224 Bit    Registers := 1     
+	              512 Bit    Registers := 1     
+	              256 Bit    Registers := 17    
+	                1 Bit    Registers := 17    
+Module rst_gen_module 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 900 (col length:140)
+BRAMs: 1000 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "rst_gen_module_u0/r_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rst_gen_module_u0/ro_rst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "r_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design XC7Z035_TOP has port o_led[3] driven by constant 0
+WARNING: [Synth 8-3917] design XC7Z035_TOP has port o_led[2] driven by constant 0
+WARNING: [Synth 8-3917] design XC7Z035_TOP has port o_led[1] driven by constant 0
+WARNING: [Synth 8-3917] design XC7Z035_TOP has port o_led[0] driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[110] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[104] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[123] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[119] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[111] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[101] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[103] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[125] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[217] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[115] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[105] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[209] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[113] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[102] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[192] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[126] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[118] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[194] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[215] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[117] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[207] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[199] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[109] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[100] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[143] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[213] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[224] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[92] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[128] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[134] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[239] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[158] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[145] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[243] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[130] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[247] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[151] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[186] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[241] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[157] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[230] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[149] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[254] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[141] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[136] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[234] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[226] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[153] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[238] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[142] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[133] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[156] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[232] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[229] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[148] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[253] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[140] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[147] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[245] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SM3_Encrypt_u0/i_0/\r_padding_data_reg[38] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[0]' (FDC) to 'i_0/ri_Original_Data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[1]' (FDC) to 'i_0/ri_Original_Data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[2]' (FDC) to 'i_0/ri_Original_Data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[3]' (FDC) to 'i_0/ri_Original_Data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[4]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[5]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[6]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[7]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[8]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[9]' (FDC) to 'i_0/ri_Original_Data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[10]' (FDC) to 'i_0/ri_Original_Data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[11]' (FDC) to 'i_0/ri_Original_Data_reg[16]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[12]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[13]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[14]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[15]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[16]' (FDC) to 'i_0/ri_Original_Data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[17]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[18]' (FDC) to 'i_0/ri_Original_Data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[19]' (FDC) to 'i_0/ri_Original_Data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[20]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[21]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[22]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[23]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[24]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[25]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[26]' (FDC) to 'i_0/ri_Original_Data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[27]' (FDC) to 'i_0/ri_Original_Data_reg[32]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[28]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[29]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[30]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[31]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[32]' (FDC) to 'i_0/ri_Original_Data_reg[33]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[33]' (FDC) to 'i_0/ri_Original_Data_reg[35]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[34]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[35]' (FDC) to 'i_0/ri_Original_Data_reg[41]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[36]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[37]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[38]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[39]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[40]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[41]' (FDC) to 'i_0/ri_Original_Data_reg[43]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[42]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[43]' (FDC) to 'i_0/ri_Original_Data_reg[48]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[44]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[45]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[46]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[47]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[48]' (FDC) to 'i_0/ri_Original_Data_reg[51]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[49]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[50]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[51]' (FDC) to 'i_0/ri_Original_Data_reg[59]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[52]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[53]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[54]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[55]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[56]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[57]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[58]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[59]' (FDC) to 'i_0/ri_Original_Data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[60]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[61]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[62]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[63]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[64]' (FDC) to 'i_0/ri_Original_Data_reg[65]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[65]' (FDC) to 'i_0/ri_Original_Data_reg[66]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[66]' (FDC) to 'i_0/ri_Original_Data_reg[73]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[67]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[68]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[69]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[70]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[71]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[72]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[73]' (FDC) to 'i_0/ri_Original_Data_reg[74]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[74]' (FDC) to 'i_0/ri_Original_Data_reg[80]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[75]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[76]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[77]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[78]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[79]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[80]' (FDC) to 'i_0/ri_Original_Data_reg[82]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[81]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[82]' (FDC) to 'i_0/ri_Original_Data_reg[90]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[83]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[84]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[85]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[86]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[87]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[88]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[89]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[90]' (FDC) to 'i_0/ri_Original_Data_reg[96]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[91]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[92]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[93]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[94]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[95]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[96]' (FDC) to 'i_0/ri_Original_Data_reg[97]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[97]' (FDC) to 'i_0/ri_Original_Data_reg[105]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[98]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Synth 8-3886] merging instance 'i_0/ri_Original_Data_reg[99]' (FDC) to 'i_0/ri_Original_Data_reg[255]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:20 ; elapsed = 00:02:22 . Memory (MB): peak = 6161.809 ; gain = 5788.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |iterator_module     |           1|       288|
+|2     |SM3_Encrypt__GC0    |           1|     26906|
+|3     |XC7Z035_TOP__GC0    |           1|       102|
+|4     |iterator_module__1  |           1|       987|
+|5     |iterator_module__2  |           1|      1172|
+|6     |iterator_module__3  |           1|      1090|
+|7     |iterator_module__4  |           1|      1246|
+|8     |iterator_module__5  |           1|      1246|
+|9     |iterator_module__6  |           1|      1246|
+|10    |iterator_module__7  |           1|      1246|
+|11    |iterator_module__8  |           1|      1003|
+|12    |iterator_module__9  |           1|      1012|
+|13    |iterator_module__10 |           1|      1012|
+|14    |iterator_module__11 |           1|      1016|
+|15    |iterator_module__12 |           1|      1265|
+|16    |iterator_module__13 |           1|      1265|
+|17    |iterator_module__14 |           1|      1267|
+|18    |iterator_module__15 |           1|      1155|
+|19    |iterator_module__16 |           1|      1618|
+|20    |iterator_module__17 |           1|      1620|
+|21    |iterator_module__18 |           1|      1619|
+|22    |iterator_module__19 |           1|      1617|
+|23    |iterator_module__20 |           1|      1618|
+|24    |iterator_module__21 |           1|      1618|
+|25    |iterator_module__22 |           1|      1620|
+|26    |iterator_module__23 |           1|      1617|
+|27    |iterator_module__24 |           1|      1618|
+|28    |iterator_module__25 |           1|      1620|
+|29    |iterator_module__26 |           1|      1619|
+|30    |iterator_module__27 |           1|      1619|
+|31    |iterator_module__28 |           1|      1617|
+|32    |iterator_module__29 |           1|      1620|
+|33    |iterator_module__30 |           1|      1617|
+|34    |iterator_module__31 |           1|      1620|
+|35    |iterator_module__32 |           1|      1619|
+|36    |iterator_module__33 |           1|      1617|
+|37    |iterator_module__34 |           1|      1618|
+|38    |iterator_module__35 |           1|      1618|
+|39    |iterator_module__36 |           1|      1618|
+|40    |iterator_module__37 |           1|      1620|
+|41    |iterator_module__38 |           1|      1617|
+|42    |iterator_module__39 |           1|      1620|
+|43    |iterator_module__40 |           1|      1617|
+|44    |iterator_module__41 |           1|      1620|
+|45    |iterator_module__42 |           1|      1619|
+|46    |iterator_module__43 |           1|      1619|
+|47    |iterator_module__44 |           1|      1619|
+|48    |iterator_module__45 |           1|      1617|
+|49    |iterator_module__46 |           1|      1618|
+|50    |iterator_module__47 |           1|      1618|
+|51    |iterator_module__48 |           1|      1618|
+|52    |iterator_module__49 |           1|      1620|
+|53    |iterator_module__50 |           1|      1619|
+|54    |iterator_module__51 |           1|      1617|
+|55    |iterator_module__52 |           1|      1618|
+|56    |iterator_module__53 |           1|      1618|
+|57    |iterator_module__54 |           1|      1620|
+|58    |iterator_module__55 |           1|      1617|
+|59    |iterator_module__56 |           1|      1618|
+|60    |iterator_module__57 |           1|      1620|
+|61    |iterator_module__58 |           1|      1619|
+|62    |iterator_module__59 |           1|      1619|
+|63    |iterator_module__60 |           1|      1617|
+|64    |iterator_module__61 |           1|      1620|
+|65    |iterator_module__62 |           1|      1617|
+|66    |iterator_module__63 |           1|      1620|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0_U0/clk_out1' to pin 'clk_wiz_0_U0/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:24 ; elapsed = 00:02:26 . Memory (MB): peak = 6161.809 ; gain = 5788.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:44 ; elapsed = 00:02:46 . Memory (MB): peak = 6161.809 ; gain = 5788.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------------+------------+----------+
+|      |RTL Partition       |Replication |Instances |
++------+--------------------+------------+----------+
+|1     |iterator_module     |           1|       288|
+|2     |SM3_Encrypt__GC0    |           1|     26906|
+|3     |XC7Z035_TOP__GC0    |           1|       102|
+|4     |iterator_module__1  |           1|       987|
+|5     |iterator_module__2  |           1|      1172|
+|6     |iterator_module__3  |           1|      1090|
+|7     |iterator_module__4  |           1|      1244|
+|8     |iterator_module__5  |           1|      1246|
+|9     |iterator_module__6  |           1|      1244|
+|10    |iterator_module__7  |           1|      1246|
+|11    |iterator_module__8  |           1|      1003|
+|12    |iterator_module__9  |           1|      1012|
+|13    |iterator_module__10 |           1|      1012|
+|14    |iterator_module__11 |           1|      1016|
+|15    |iterator_module__12 |           1|      1265|
+|16    |iterator_module__13 |           1|      1265|
+|17    |iterator_module__14 |           1|      1267|
+|18    |iterator_module__15 |           1|      1155|
+|19    |iterator_module__16 |           1|      1618|
+|20    |iterator_module__17 |           1|      1620|
+|21    |iterator_module__18 |           1|      1619|
+|22    |iterator_module__19 |           1|      1617|
+|23    |iterator_module__20 |           1|      1618|
+|24    |iterator_module__21 |           1|      1618|
+|25    |iterator_module__22 |           1|      1620|
+|26    |iterator_module__23 |           1|      1617|
+|27    |iterator_module__24 |           1|      1618|
+|28    |iterator_module__25 |           1|      1620|
+|29    |iterator_module__26 |           1|      1619|
+|30    |iterator_module__27 |           1|      1619|
+|31    |iterator_module__28 |           1|      1617|
+|32    |iterator_module__29 |           1|      1620|
+|33    |iterator_module__30 |           1|      1617|
+|34    |iterator_module__31 |           1|      1620|
+|35    |iterator_module__32 |           1|      1619|
+|36    |iterator_module__33 |           1|      1617|
+|37    |iterator_module__34 |           1|      1618|
+|38    |iterator_module__35 |           1|      1618|
+|39    |iterator_module__36 |           1|      1618|
+|40    |iterator_module__37 |           1|      1620|
+|41    |iterator_module__38 |           1|      1617|
+|42    |iterator_module__39 |           1|      1620|
+|43    |iterator_module__40 |           1|      1617|
+|44    |iterator_module__41 |           1|      1620|
+|45    |iterator_module__42 |           1|      1619|
+|46    |iterator_module__43 |           1|      1619|
+|47    |iterator_module__44 |           1|      1619|
+|48    |iterator_module__45 |           1|      1617|
+|49    |iterator_module__46 |           1|      1618|
+|50    |iterator_module__47 |           1|      1618|
+|51    |iterator_module__48 |           1|      1618|
+|52    |iterator_module__49 |           1|      1620|
+|53    |iterator_module__50 |           1|      1619|
+|54    |iterator_module__51 |           1|      1617|
+|55    |iterator_module__52 |           1|      1618|
+|56    |iterator_module__53 |           1|      1618|
+|57    |iterator_module__54 |           1|      1620|
+|58    |iterator_module__55 |           1|      1617|
+|59    |iterator_module__56 |           1|      1618|
+|60    |iterator_module__57 |           1|      1620|
+|61    |iterator_module__58 |           1|      1619|
+|62    |iterator_module__59 |           1|      1619|
+|63    |iterator_module__60 |           1|      1617|
+|64    |iterator_module__61 |           1|      1620|
+|65    |iterator_module__62 |           1|      1617|
+|66    |iterator_module__63 |           1|      1620|
++------+--------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:57 ; elapsed = 00:02:59 . Memory (MB): peak = 6161.809 ; gain = 5788.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:58 ; elapsed = 00:03:00 . Memory (MB): peak = 6161.809 ; gain = 5788.496
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:58 ; elapsed = 00:03:00 . Memory (MB): peak = 6161.809 ; gain = 5788.496
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:59 ; elapsed = 00:03:02 . Memory (MB): peak = 6161.809 ; gain = 5788.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:59 ; elapsed = 00:03:02 . Memory (MB): peak = 6161.809 ; gain = 5788.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:00 ; elapsed = 00:03:02 . Memory (MB): peak = 6161.809 ; gain = 5788.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:00 ; elapsed = 00:03:02 . Memory (MB): peak = 6161.809 ; gain = 5788.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |CARRY4    |  1536|
+|3     |LUT1      |   892|
+|4     |LUT2      |  4240|
+|5     |LUT3      |  8849|
+|6     |LUT4      |  5410|
+|7     |LUT5      |  4473|
+|8     |LUT6      |  9356|
+|9     |MUXF7     |     1|
+|10    |FDCE      |  7729|
+|11    |FDRE      |  3857|
+|12    |OBUF      |     4|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------+------+
+|      |Instance            |Module         |Cells |
++------+--------------------+---------------+------+
+|1     |top                 |               | 46349|
+|2     |  SM3_Encrypt_u0    |SM3_Encrypt    | 46274|
+|3     |    Data_Extend_u0  |Data_Extend    | 11427|
+|4     |  rst_gen_module_u0 |rst_gen_module |    25|
++------+--------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:00 ; elapsed = 00:03:02 . Memory (MB): peak = 6161.809 ; gain = 5788.496
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:50 ; elapsed = 00:02:55 . Memory (MB): peak = 6161.809 ; gain = 5099.754
+Synthesis Optimization Complete : Time (s): cpu = 00:03:00 ; elapsed = 00:03:02 . Memory (MB): peak = 6161.809 ; gain = 5788.496
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1537 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 6161.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+241 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:07 ; elapsed = 00:03:09 . Memory (MB): peak = 6161.809 ; gain = 5800.008
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 6161.809 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/Desktop/Work/Class/Class2_Program/SM3/project_1/project_1.runs/synth_1/XC7Z035_TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file XC7Z035_TOP_utilization_synth.rpt -pb XC7Z035_TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 27 22:10:12 2024...
